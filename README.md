@@ -1,4 +1,4 @@
-# JobSite REST API
+# Inflow Admin Panel
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -19,9 +19,6 @@ Overall, the Inflow platform aims to provide businesses with a comprehensive sol
 - [License](#license)
 
 ## Installation
-
-Install Redis in Memory Database
-Install Postgres SQL Database
 
 ```bash
 git clone https://github.com/jahidhiron/inflow-admin.git
