@@ -1,0 +1,130 @@
+.cr-info-wrapper.cr-info {
+    width: 100%;
+    max-width: 960px;
+}
+.btn-back{
+    margin: -15px 30px 20px -30px;
+}
+.cr-heading{
+    color: #2A3657;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0 15px;
+}
+.cr-info-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cr-info-row>div{
+    width: 33.333%;
+    padding-right: 25px;
+}
+.cr-info-row>div.half-width{
+    width: 66.999%;
+}
+.cr-info-row label {
+    font-size: 16px;
+    color: #2A3657;
+    display: flex;
+}
+.cr-info-row input[type=text],.cr-info-row input[type=email],.cr-info-row input[type=number],.cr-info-row textarea{
+    font-size: 14px;
+    color: #2A3657;
+    background-color: #EBEBEB;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 35px;
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+.cr-info-row textarea{
+    height: auto;
+    min-height: 146px;
+    line-height: 1.3;
+    min-width: 616px;
+    color: #707070;
+}
+.cr-info-row input::placeholder {
+    font-weight: 400; 
+    color: #707070;
+}
+.cr-info-row input[type=button],.cr-info-row a{
+height: 39px;
+min-width: 163px;
+margin: 0 20px 10px 0;
+border-radius: 5px;
+outline: none;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 16px;
+font-weight: 700;
+cursor: pointer;
+}
+.cr-info-row .btn-confirm{
+  background-color: #1E2D46;
+}
+.cr-info-row .btn-cancel{
+    background-color: #FA0000;
+}
+.cr-info-row input[type=button]:focus,.cr-info-row input[type=button]:hover,.cr-info-row a:hover{
+opacity: .8;
+}
+.directorsDetails{
+    width: 100%;
+    max-width: 1030px;
+}
+.directorsDetails h3{
+    color: #2A3657;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.directorsDetails .cr-info-row{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.directorsDetails .cr-info-row li {
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    padding-left: 60px;
+}
+.directorsDetails .cr-info-row li .cr-counter {
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+.directorsDetails .cr-info-row li>div{
+    width: 33.333%;
+    padding-right: 25px;
+}
+/***********************CR info*******************/
+.full-cr-info,
+.cr-details {
+  width: 100%; 
+}
+.cr-details{
+    max-width: 991px;
+}
+
+@media(max-width:767px){
+    .cr-info-row>div {
+        width: 100%; 
+    }
+    .directorsDetails .cr-info-row li>div {
+        width: 100%; 
+    }
+}

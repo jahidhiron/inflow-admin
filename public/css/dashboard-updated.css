@@ -1,0 +1,113 @@
+@import url("dashboard.css");
+.dashboard-container {
+  width: 100%;
+  max-width: 760px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+}
+.dashboard-container h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #2a3657;
+  margin: 0 0 15px;
+}
+.dashboard-overview {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard-overview > div {
+  width: 25%;
+}
+.total-companies {
+  border-radius: 5px;
+  background: #829dee;
+  min-width: 130px;
+  padding: 10px;
+  display: inline-block;
+}
+.dashboard-overview > div b {
+  color: #2a3657;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.dashboard-overview > div span {
+  color: #b1b1b1;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  line-height: 1;
+}
+.dashboard-overview > div .total-companies span {
+  color: #fff;
+}
+.overview-filter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #253858;
+  padding: 10px 0;
+}
+.overview-filter .start-date,
+.overview-filter .end-date {
+  border-radius: 24px;
+  border: #dce3f9 solid 1px !important;
+  font-size: 12px;
+  color: #253858;
+  background-color: #fff;
+  margin: 0 4px;
+  padding: 5px;
+}
+.overview-filter .start-date:focus,
+.overview-filter .end-date:focus {
+  border: #dce3f9 solid 1px !important;
+}
+.pull-right {
+  margin: 0 0 0 auto;
+  cursor: pointer;
+}
+.dashboard-companies {
+  width: 100%;
+}
+.dashboard-companies .companies-list {
+  margin-top: 30px;
+  max-width: 760px;
+}
+.dashboard-companies .companies-list h2 {
+  flex-wrap: wrap;
+}
+.dashboard-companies .companies-list h2 span {
+  color: #7e7e7e;
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  line-height: 1;
+  font-weight: 400;
+}
+.dashboard-companies .companies-list .invite-btn {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  background: #829dee;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  width: 94px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.dashboard-companies .companies-list .col-count-5 .plan-col.col-4 {
+  width: 10%;
+}
+.dashboard-companies .companies-list .col-count-5 .plan-col.col-5 {
+  width: 20%;
+  text-align: right;
+  justify-content: flex-end;
+  display: flex;
+}
+.dashboard-companies .status {
+  width: auto;
+}

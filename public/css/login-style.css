@@ -1,0 +1,216 @@
+/********************Login screen styles****************************/
+.login-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+.login-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  max-width: 516px;
+  background: url(../images/login-bg.svg) no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: 90px;
+  color: #fff;
+}
+.login-sidebar h2 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1;
+}
+.login-sidebar p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+.login-main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: calc(100% - 516px);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 15px;
+}
+.login-main-inner {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.login-menu {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  padding: 30px 60px 15px;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+.login-menu .logo-wrap {
+  margin: 0 auto 0 0;
+}
+.login-menu .language-wrap {
+  margin: 0 0 0 auto;
+}
+.language-box {
+  position: relative;
+  font-size: 14px;
+  color: #253858;
+  text-transform: uppercase;
+}
+
+.login-main-inner form {
+  width: 100%;
+}
+.login-main-inner h2 {
+  font-size: 26px;
+  margin: 0 0 30px;
+}
+.login-main-inner .medium-margin {
+  margin-bottom: 15px;
+}
+.login-main-inner p {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+.input-field {
+  border: #ccc solid 1px;
+  border-radius: 6px;
+  height: 40px;
+  line-height: 1;
+  padding: 0 15px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  font-size: 14px;
+  margin: 5px 0 15px;
+}
+.otp-box {
+  margin: 25px 0 15px;
+}
+.otp-box .input-field {
+  height: 60px;
+  width: 60px !important;
+  margin: 0 2px;
+  padding: 0 10px;
+  justify-content: center;
+  text-align: center;
+  font-size: 31px;
+  background: url(../images/placeholder-bg.png) no-repeat center center;
+  margin-right: 23px;
+}
+.otp-box .input-field:focus {
+  border-color: #a537dc;
+  color: #a537dc;
+  background: none;
+}
+.otp-box input[type="number"]::-webkit-inner-spin-button,
+.otp-box input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.otp-box input::placeholder {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1;
+}
+.login-main-inner label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.input-wrap {
+  position: relative;
+}
+.login-main-inner .input-password {
+  padding-right: 30px;
+}
+.input-submit {
+  background-image: linear-gradient(to right, #829dee, #a537dc);
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all ease-in-out 0.2s;
+  width: 100%;
+  height: 46px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  margin: 15px 0;
+}
+.input-submit:hover,
+.input-submit:focus {
+  background-image: linear-gradient(to right, #a537dc, #9d41ca);
+  transition: all ease-in-out 0.2s;
+}
+.forgot-password {
+  justify-content: center;
+  font-size: 14px;
+  display: flex;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/********************Login screen styles end****************************/
+/*********************** Responsive css ***********************/
+@media(max-width:1024px){
+  .login-main,
+  .login-sidebar{
+    width: 50%;
+    max-width: unset;
+  }
+  .login-sidebar{
+    padding: 60px 30px;
+  }
+  .otp-box .input-field{
+    margin-right: 5px; 
+    width: 15% !important;
+  }
+}
+@media(max-width:991px){
+ 
+}
+@media(max-width:767px){
+  .login-wrapper,
+  .login-container{
+    height: auto;
+  }
+  .login-main,
+  .login-sidebar{
+    width: 100%;
+    max-width: unset;
+    height: auto;
+  }
+  .login-main{
+    padding: 30px 15px;
+  }
+  .login-sidebar {
+    padding: 90px 15px 60px;
+  }
+  .login-menu { 
+    position: fixed; 
+    padding: 15px; 
+    z-index: 99; 
+    background: #fff;
+}
+.login-main>div {
+  height: auto !important; 
+}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      // Function to load the paymentWidgets.js with the dynamic checkoutId
+      function loadPaymentWidgets(checkoutId) {
+        var script = document.createElement("script");
+        script.src = `https://eu-test.oppwa.com/v1/paymentWidgets.js?checkoutId=${checkoutId}`;
+        script.type = "text/javascript";
+        document.head.appendChild(script);
+      }
+
+      // Function to handle onReady event
+      function onReadyCallback(data) {
+        $(".wpwl-label-brand").html("Card Brand");
+      }
+
+      // Function to handle onError event
+      function onErrorCallback() {
+        // Handle any errors here
+      }
+
+      $(document).ready(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+        loadPaymentWidgets(id);
+      });
+    </script>
+    <title>Checkout</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form
+      action="https://inflow-web.development.limited/subscriptions/user/add-card/redirect"
+      class="paymentWidgets"
+      data-brands="VISA MASTER"
+    ></form>
+  </body>
+</html>

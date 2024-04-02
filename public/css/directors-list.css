@@ -1,0 +1,65 @@
+.directors-list {
+    width: 100%;
+    max-width: 700px;
+}
+.btn-back{
+    margin: -15px 30px 20px -30px;
+}
+.directors-list>div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+}
+.directors-list>div a{
+    height: 30px;
+    width: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0 auto auto;
+    color: #fff;
+    background: #253858;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    border: #253858 solid 1px;
+}
+.directors-list>div a:hover{
+    color: #253858;
+    background: transparent;
+
+}
+.directors-list .btn{
+    color: #253858;
+    font-size: 20px;
+    font-weight: 700;
+    border: #253858 solid 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 114px;
+    margin: 25px 0 0;
+}
+.directors-list .btn:hover{
+    background-color: #253858;
+    color: #fff;
+}
+
+@media(max-width:767px){
+    .btn-back {
+        margin: -15px 30px 20px 0px;
+    }
+    .directors-list.pl-60{
+        padding-left: 0 !important;
+    }
+}
